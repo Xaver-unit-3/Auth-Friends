@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 import FriendsPage from './components/FriendsPage';
+import LoginPage from './components/LoginPage';
 
 
 function App() {
@@ -15,10 +16,10 @@ function App() {
       <div>
         <ul>
           <li>
-            <link to='/'>Login</link>
+            <Link to='/'>Login</Link>
           </li>
           <li>
-            <link to='/friends'>Friends</link>
+            <Link to='/friends'>Friends</Link>
           </li>
         </ul>
 
@@ -27,6 +28,10 @@ function App() {
           <PrivateRoute>
             <FriendsPage />
           </PrivateRoute>
+          </Route>
+
+          <Route path='/'>
+            <LoginPage />
           </Route>
         </Switch>
       </div>
