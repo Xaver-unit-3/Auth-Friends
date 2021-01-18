@@ -7,7 +7,7 @@ const FriendsForm = () => {
 
   const newFriend = async (e) => {
     e.preventDefault();
-    console.log("friends");
+    console.log("friend added");
   };
 
   return (
